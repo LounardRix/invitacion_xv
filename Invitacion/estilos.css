@@ -1,0 +1,249 @@
+/* Global Styles */
+
+body {
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+  padding: 0;
+  background-image: url("fondo_pagina.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1, header h2 {
+  color: #333;
+}
+
+/* Hero Section */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-image: linear-gradient(to top, rgb(144, 26, 85), transparent);
+  filter: sepia(0.5) hue-rotate(300deg);
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(5px);
+  opacity: 0.7;
+  border: 10px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(171, 19, 105, 0.953);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+/* Galería */
+
+#galeria {
+  padding: 20px;
+}
+
+.foto-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-container img {
+  width: 80vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.foto-container p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Audio */
+
+#audio {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  background-color: #90598135;
+  padding: 10px;
+  opacity: 0.7;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media only screen and (max-width: 768px) {
+  #audio {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+/* Contador */
+
+#contador {
+  text-align: center;
+}
+
+.contador-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.contador-cuadro {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 25%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contador-cuadro span {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contador-cuadro p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Cuadro */
+
+.cuadro {
+  display: inline-block;
+  width: fit-content;
+  background-color: rgba(255, 184, 248, 0.259);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cuadro:hover {
+  box-shadow: 0 0 10px rgba(195, 114, 167, 0.3);
+}
+
+/* Agradecimientos */
+
+.agradecimientos-container {
+  text-align: center;
+}
+
+.centrado {
+  margin-bottom: 10px;
+}
+
+/* Parroquia  */
+
+.misa-container {
+  text-align: center;
+}
+
+.misa-container .cuadro {
+  background-color: #ffb4e25a;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 115, 201, 0.386);
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* boton parroquia */
+
+.ver-en-mapa-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ver-en-mapa-btn:hover {
+  background-color: #3e8e43;
+}
+
+/* salon de fiestas*/
+
+.salón-fiestas-container {
+  text-align: center;
+}
+
+.salón-fiestas-container .cuadro {
+  background-color: rgba(255, 184, 248, 0.5); /* Color rosa pastel */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* codigo vestimenta*/
+
+.codigo-vestimenta {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.codigo-vestimenta img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+/* Footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
