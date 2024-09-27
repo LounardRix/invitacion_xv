@@ -44,3 +44,20 @@ function actualizarContador() {
 
 actualizarContador();
 setInterval(actualizarContador, 1000);
+
+const sections = document.querySelectorAll('.animate');
+
+window.addEventListener('scroll', () => {
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const viewportHeight = window.innerHeight;
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition >= sectionTop - viewportHeight / 2 && scrollPosition < sectionTop + sectionHeight) {
+      section.classList.add('show');
+    } else {
+      section.classList.remove('show');
+    }
+  });
+});
