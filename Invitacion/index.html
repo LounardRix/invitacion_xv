@@ -28,7 +28,7 @@
   </audio>
   </button>
 
-  <section id="fotos-cumpleañera">
+  <section id="fotos-cumpleañera" class="animate">
     <div class="foto-container">
       <img src="xv5.png" alt="Foto de Karla Fernanda 2">
       <p>Karla Fernanda Guevara Ambrocio</p>
@@ -37,7 +37,7 @@
 
 
 
-  <section id="informacion-fiesta">
+  <section id="informacion-fiesta" class="animate">
     <h2 style="text-align: center; font-size: 70px;">¡La Fiesta del Año!</i></h2>
     <h1 style="text-align: center;"><strong>Fecha:</strong> 02 - 11 - 2024</h1>
     <p style="text-align: center;"> ¡Estamos muy felices! y queremos compartirlo con todos ustedes, preparando una
@@ -47,7 +47,7 @@
   <br>
   <br>
 
-  <section id="contador">
+  <section id="contador" class="animate">
     <h2 style="font-size: 50px;">Tiempo restante para la fiesta</h2>
     <div class="contador-container">
       <div class="contador-cuadro">
@@ -69,22 +69,22 @@
     </div>
   </section>
 
-  <section id="agradecimientos"></section>
-  <div class="agradecimientos-container">
-    <div class="cuadro">
-      <h2 style="font-size: 40px;">EN AGRADECIMIENTO A MIS PADRES</h2>
-      <p class="centrado" style="font-size: 30px;">Araceli Ambrocio Mendoza</p>
-      <p class="centrado" style="font-size: 30px;">Jesús Antonio Guevara Sánchez</p>
-      <h2 style="font-size: 40px;">Y PADRINOS</h2>
-      <p class="centrado" style="font-size: 30px;">Fatyma Joselyne Escobar Cruz</p>
-      <p class="centrado" style="font-size: 30px;">Jose Efraín Pineda Alvarado</p>
+  <section id="agradecimientos" class="animate">
+    <div class="agradecimientos-container">
+      <div class="cuadro">
+        <h2 style="font-size: 40px;">EN AGRADECIMIENTO A MIS PADRES</h2>
+        <p class="centrado" style="font-size: 30px;">Araceli Ambrocio Mendoza</p>
+        <p class="centrado" style="font-size: 30px;">Jesús Antonio Guevara Sánchez</p>
+        <h2 style="font-size: 40px;">Y PADRINOS</h2>
+        <p class="centrado" style="font-size: 30px;">Fatyma Joselyne Escobar Cruz</p>
+        <p class="centrado" style="font-size: 30px;">Jose Efraín Pineda Alvarado</p>
+      </div>
     </div>
-  </div>
   </section>
 
   <hr>
 
-  <section id="detalles-misa">
+  <section id="detalles-misa" class="animate">
     <h2 style="text-align: center; font-size: 50px;">ACOMPAÑAME</h2>
 
     <div class="misa-container">
@@ -111,7 +111,7 @@
 
   </section>
 
-  <section id="codigo-vestimenta">
+  <section id="codigo-vestimenta" class="animate">
     <h2 style="text-align: center;">Código de Vestimenta</h2>
     <div class="codigo-vestimenta">
       <h3>Formal</h3>
@@ -120,7 +120,7 @@
     </div>
   </section>
 
-  <div class="salón-fiestas-container">
+  <div class="salón-fiestas-container" class="animate">
     <div class="cuadro">
       <section id="lluvia-de-sobres">
         <h2 style="text-align: center; font-size: 60px;">¡Lluvia de Sobres!</h2>
@@ -133,9 +133,10 @@
     </div>
   </div>
 
-  <section id="llamada-accion">
+  <section id="llamada-accion" class="animate">
     <h2 style="text-align: center; font-size: 24px;">¡Confirma tu asistencia!</h2>
-    <p style="text-align: center; font-size: 18px;">Por favor, completa los siguientes campos para confirmar tu asistencia antes del 25 de octubre del 2024</p>
+    <p style="text-align: center; font-size: 18px;">Por favor, completa los siguientes campos para confirmar tu
+      asistencia antes del 25 de octubre del 2024</p>
     <form style="text-align: center;">
       <label for="nombre" style="font-size: 18px;">Nombre:</label>
       <input type="text" id="nombre" name="nombre" style="width: 50%; padding: 10px; font-size: 18px;">
@@ -146,10 +147,12 @@
       <label for="correo" style="font-size: 18px;">Correo electrónico:</label>
       <input type="email" id="correo" name="correo" style="width: 50%; padding: 10px; font-size: 18px;">
       <br><br>
-      <button onclick="enviarMensaje()" style="background-color: #4CAF50; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Confirmar asistencia</button>
+      <button onclick="enviarMensaje()"
+        style="background-color: #4CAF50; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Confirmar
+        asistencia</button>
     </form>
   </section>
-  
+
   <script>
     function enviarMensaje() {
       var nombre = document.getElementById("nombre").value;
@@ -161,14 +164,14 @@
   </script>
 
 
-<section id="galeria">
-  <h2 style="text-align: center;">Galería de fotos</h2>
-  <div style="text-align: center;">
-    <img src="xv1.jpg" alt="Imagen 1" style="width: 30%; margin: 10px;">
-    <img src="xv4.jpg" alt="Imagen 2" style="width: 30%; margin: 10px;">
-    <!-- Agrega más imágenes aquí -->
-  </div>
-</section>
+  <section id="galeria" class="animate">
+    <h2 style="text-align: center;">Galería de fotos</h2>
+    <div style="text-align: center;">
+      <img src="xv1.jpg" alt="Imagen 1" style="width: 30%; margin: 10px;">
+      <img src="xv4.jpg" alt="Imagen 2" style="width: 30%; margin: 10px;">
+      <!-- Agrega más imágenes aquí -->
+    </div>
+  </section>
 
 
   <footer>
