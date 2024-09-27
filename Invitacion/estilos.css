@@ -247,3 +247,17 @@ footer {
   text-align: center;
   clear: both;
 }
+
+
+/* Animaciones */
+
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
